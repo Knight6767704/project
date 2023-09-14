@@ -1,0 +1,37 @@
+/* styles.css */
+.carousel-container {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.logo {
+    flex: 0 0 auto;
+    padding: 1rem;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Apply styles to the container */
+.contact-form-container {
+    width: 506px;
+    height: 294px;
+}
+
+/* Apply styles to the form inside the container */
+.contact-form {
+    width: 100%; /* Ensure the form takes up the full width of the container */
+    height: 100%; /* Ensure the form takes up the full height of the container */
+    /* Additional styling for form elements (input fields, buttons, etc.) can go here */
+}
