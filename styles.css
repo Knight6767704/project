@@ -1,28 +1,24 @@
-/* styles.css */
 .carousel-container {
-    max-width: 100%;
     overflow: hidden;
     position: relative;
-}
-
-.carousel {
+  }
+  
+  .carousel {
     display: flex;
-    animation: scroll 10s linear infinite;
-}
-
-.logo {
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items at the start horizontally */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
     flex: 0 0 auto;
-    padding: 1rem;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+    max-width: 150px; /* Set your desired maximum width here */
+    margin-right: 16px; /* Adjust as needed for spacing between items */
+  }
+  .carousel-item:last-child {
+    margin-right: 0;
+  }
+  
 /* Apply styles to the container */
 .contact-form-container {
     width: 506px;
