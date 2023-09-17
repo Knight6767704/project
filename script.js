@@ -1,27 +1,42 @@
 const carousel = document.querySelector(".carousel");
 const carouselItems = document.querySelectorAll(".carousel-item");
+const numVisibleItems = 4; // Set the number of visible logos
+const animationDuration = 3000; // Animation duration in milliseconds
 
 let currentIndex = 0;
 
 function updateCarousel() {
   const itemWidth = carouselItems[0].offsetWidth;
-  carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  const translateX = -currentIndex * (itemWidth + 16); // 16 is the margin-right
+  carousel.style.transform = `translateX(${translateX}px)`;
 }
 
-function nextSlide() {
+function moveCarousel() {
   currentIndex++;
-  if (currentIndex >= carouselItems.length) {
+  if (currentIndex + numVisibleItems > carouselItems.length) {
     currentIndex = 0;
   }
   updateCarousel();
 }
 
-function prevSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = carouselItems.length - 1;
+// Use requestAnimationFrame for smoother animation
+let lastTimestamp = null;
+function animate(timestamp) {
+  if (!lastTimestamp) {
+    lastTimestamp = timestamp;
   }
-  updateCarousel();
+  const deltaTime = timestamp - lastTimestamp;
+  if (deltaTime >= animationDuration) {
+    moveCarousel();
+    lastTimestamp = timestamp;
+  }
+  requestAnimationFrame(animate);
 }
 
-setInterval(nextSlide, 3000); // Auto-advance the carousel every 3 seconds (adjust as needed)
+requestAnimationFrame(animate);
+
+// Ensure the number of visible logos is consistent
+carousel.style.width = `calc((100% / ${numVisibleItems}) * ${carouselItems.length})`;
+carouselItems.forEach((item) => {
+  item.style.width = `calc(100% / ${carouselItems.length})`;
+});

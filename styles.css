@@ -5,29 +5,18 @@
   
   .carousel {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: flex-start; /* Align items at the start horizontally */
+    align-items: center;
     transition: transform 0.5s ease-in-out;
   }
   
   .carousel-item {
     flex: 0 0 auto;
-    max-width: 150px; /* Set your desired maximum width here */
-    margin-right: 16px; /* Adjust as needed for spacing between items */
+    max-width: 150px;
+    margin-right: 16px;
   }
+  
   .carousel-item:last-child {
     margin-right: 0;
   }
   
-/* Apply styles to the container */
-.contact-form-container {
-    width: 506px;
-    height: 294px;
-}
 
-/* Apply styles to the form inside the container */
-.contact-form {
-    width: 100%; /* Ensure the form takes up the full width of the container */
-    height: 100%; /* Ensure the form takes up the full height of the container */
-    /* Additional styling for form elements (input fields, buttons, etc.) can go here */
-}
