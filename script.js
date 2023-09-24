@@ -1,42 +1,29 @@
-const carousel = document.querySelector(".carousel");
-const carouselItems = document.querySelectorAll(".carousel-item");
-const numVisibleItems = 4; // Set the number of visible logos
-const animationDuration = 3000; // Animation duration in milliseconds
+// Get references to your navbar and toggle button elements
+const navbar = document.getElementById('navbar-sticky');
+const toggleButton = document.getElementById('toggleNavbar');
 
-let currentIndex = 0;
-
-function updateCarousel() {
-  const itemWidth = carouselItems[0].offsetWidth;
-  const translateX = -currentIndex * (itemWidth + 16); // 16 is the margin-right
-  carousel.style.transform = `translateX(${translateX}px)`;
+// Function to close the navbar
+function closeNavbar() {
+  navbar.classList.remove('md:block');
+  navbar.setAttribute('aria-expanded', 'false');
+  // Add any additional code to hide or close the navbar as needed
 }
 
-function moveCarousel() {
-  currentIndex++;
-  if (currentIndex + numVisibleItems > carouselItems.length) {
-    currentIndex = 0;
+// Event listener to close navbar when clicking outside
+document.addEventListener('click', function (event) {
+  // Check if the click target is not inside the navbar or toggle button
+  if (!navbar.contains(event.target) && event.target !== toggleButton) {
+    closeNavbar();
   }
-  updateCarousel();
-}
+});
 
-// Use requestAnimationFrame for smoother animation
-let lastTimestamp = null;
-function animate(timestamp) {
-  if (!lastTimestamp) {
-    lastTimestamp = timestamp;
+// Event listener to toggle the navbar when the button is clicked
+toggleButton.addEventListener('click', function () {
+  const expanded = navbar.getAttribute('aria-expanded');
+  if (expanded === 'true') {
+    closeNavbar();
+  } else {
+    navbar.classList.add('md:block');
+    navbar.setAttribute('aria-expanded', 'true');
   }
-  const deltaTime = timestamp - lastTimestamp;
-  if (deltaTime >= animationDuration) {
-    moveCarousel();
-    lastTimestamp = timestamp;
-  }
-  requestAnimationFrame(animate);
-}
-
-requestAnimationFrame(animate);
-
-// Ensure the number of visible logos is consistent
-carousel.style.width = `calc((100% / ${numVisibleItems}) * ${carouselItems.length})`;
-carouselItems.forEach((item) => {
-  item.style.width = `calc(100% / ${carouselItems.length})`;
 });

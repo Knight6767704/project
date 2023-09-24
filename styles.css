@@ -3,3 +3,22 @@
   height: 100px; /* Set the desired height */
 }
 
+.reason {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.reason:not(:last-child) {
+  border-right: 1px solid black; /* Vertical line */
+  padding-right: 20px; /* Adjust as needed */
+  margin-right: 20px; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .reason:not(:last-child) {
+    border-right: none; /* Hide vertical lines in responsive mode */
+    padding-right: 0; /* Reset padding */
+    margin-right: 0; /* Reset margin */
+  }
+}
