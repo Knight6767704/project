@@ -88,29 +88,33 @@
 </div>
             <div>
                 <h2 class="text-3xl font-extrabold">Get In Touch</h2>
-                <form>
+                <form id="myForm">
                   <div class="space-y-4 mt-8">
-                      <input type="text" placeholder="Full Name"
+                      <input type="text" placeholder="Full Name" name="fullName" required
                           class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-                      <input type="text" placeholder="Street"
+              
+                      <input type="text" placeholder="Street" name="street" required
                           class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-                      <div class="grid grid-cols-2 gap-6">
-                          <input type="text" placeholder="City"
-                              class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-
-                          <input type="text" placeholder="Postcode"
-                              class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-                      </div>
-                      <input type="number" placeholder="Phone No."
+              
+                      <input type="text" placeholder="City" name="city" required
+                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
+              
+                      <input type="text" placeholder="Postcode" name="postcode" required
+                          pattern="[0-9]{6}" title="Enter a valid 6-digit postal code"
+                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
+              
+                      <input type="tel" placeholder="Phone No." name="phone" required
+                          pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"
                           class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-
-                      <input type="email" placeholder="Email"
+              
+                      <input type="email" placeholder="Email" name="email" required
                           class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-
-                      <textarea placeholder="Write Message"
+              
+                      <textarea placeholder="Write Message" name="message" required
                           class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none"></textarea>
                   </div>
-                  <button type="button"
+              
+                  <button type="submit"
                       class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]" style="background-color: #ffa500;">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                           viewBox="0 0 548.244 548.244">
@@ -121,6 +125,7 @@
                       Send Message
                   </button>
               </form>
+              
             </div>
             
         </div>
@@ -188,5 +193,6 @@
 <script src="tailwind.config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script src="navbar.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
