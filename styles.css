@@ -17,7 +17,6 @@
 
 @media (max-width: 768px) {
   .reason:not(:last-child) {
-    border-right: none; /* Hide vertical lines in responsive mode */
     padding-right: 0; /* Reset padding */
     margin-right: 0; /* Reset margin */
   }
