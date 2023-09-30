@@ -21,3 +21,43 @@
     margin-right: 0; /* Reset margin */
   }
 }
+
+/* CSS */
+nav ul li {
+  margin-bottom: 10px; /* Adjust this value to increase or decrease the gap */
+}
+
+
+/* CSS */
+footer {
+  background-color: black;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+footer h1, footer h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #3498db; /* Change this to your desired hover color */
+}

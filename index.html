@@ -9,6 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -228,6 +230,7 @@
   </div>
 </section>
 </div>
+
 
 <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
   <br>
@@ -584,34 +587,25 @@
 </div>
             <div>
                 <h2 class="text-3xl font-extrabold">Get In Touch</h2>
-                <form id="myForm">
+                <form id="myForm" action="http://localhost:3000/submit-form" method="POST">
                   <div class="space-y-4 mt-8">
                       <input type="text" placeholder="Full Name" name="fullName" required
-                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-              
-                      <input type="text" placeholder="Street" name="street" required
-                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-              
-                      <input type="text" placeholder="City" name="city" required
-                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-              
-                      <input type="text" placeholder="Postcode" name="postcode" required
-                          pattern="[0-9]{6}" title="Enter a valid 6-digit postal code"
-                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
-              
+                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
                       <input type="tel" placeholder="Phone No." name="phone" required
                           pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"
-                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
+                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
               
-                      <input type="email" placeholder="Email" name="email" required
-                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none" />
+                      <input type="text" placeholder="Subject" name="subject" required
+                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
               
                       <textarea placeholder="Write Message" name="message" required
-                          class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none"></textarea>
+                          class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg"
+                          style="height: 200px; width: 100%;"></textarea>
                   </div>
               
                   <button type="submit"
-                      class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]" style="background-color: #ffa500;">
+                      class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]"
+                      style="background-color: #ffa500; border-radius: 8px;">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                           viewBox="0 0 548.244 548.244">
                           <path fill-rule="evenodd"
@@ -621,6 +615,9 @@
                       Send Message
                   </button>
               </form>
+              
+              
+              
               
             </div>
             
@@ -672,11 +669,11 @@
       <!-- Facebook Icon -->
       <i class="fab fa-facebook"></i>
     </a>
-    <a href="#" class="text-white hover:text-blue-400 mx-2">
+    <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2">
       <!-- Instagram Icon -->
       <i class="fab fa-instagram"></i>
     </a>
-    <a href="#" class="text-white hover:text-blue-400 mx-2">
+    <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2">
       <!-- LinkedIn Icon -->
       <i class="fab fa-linkedin"></i>
     </a>
@@ -689,7 +686,7 @@
 <script src="tailwind.config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 <script src="navbar.js"></script>
-<script src="form.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
 
