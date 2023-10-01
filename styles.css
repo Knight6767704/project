@@ -2,6 +2,7 @@
   width: 100px; /* Set the desired width */
   height: 100px; /* Set the desired height */
 }
+/* Add margin-right to the navigation items */
 
 .reason {
   display: flex;
@@ -9,24 +10,21 @@
   color: black;
 }
 
-.reason:not(:last-child) {
-  border-right: 1px solid black; /* Vertical line */
-  padding-right: 20px; /* Adjust as needed */
-  margin-right: 20px; /* Adjust as needed */
+.reason{
+  border-left: 1px solid black; /* Vertical line */
+  padding-right: 100px; /* Adjust as needed */
+  margin-right: 30px; /* Adjust as needed */
 }
 
 @media (max-width: 768px) {
-  .reason:not(:last-child) {
+  .reason {
     padding-right: 0; /* Reset padding */
     margin-right: 0; /* Reset margin */
+    color: black;
   }
 }
 
 /* CSS */
-nav ul li {
-  margin-bottom: 10px; /* Adjust this value to increase or decrease the gap */
-}
-
 
 /* CSS */
 footer {
@@ -60,4 +58,9 @@ footer a {
 
 footer a:hover {
   color: #3498db; /* Change this to your desired hover color */
+}
+
+/* Add this CSS code to your stylesheet */
+.card:hover {
+  background-color: #ffa500;
 }

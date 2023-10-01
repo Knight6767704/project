@@ -34,15 +34,15 @@
   
   
     <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700" style="background-color: black;">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700" style="background-color: black;">
         <li>
           <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About Us</a>
         </li>
         <li>
-          <a href="#services" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+          <a href="service.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
         </li>
         <li>
-          <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+          <a href="faq.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
         </li>
         <li>
           <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact Us</a>
@@ -51,7 +51,6 @@
     </div>
     </div>
   </nav> 
-  
    
 <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
   <br>
@@ -68,8 +67,9 @@
       <br>
       <br>
       <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-        <button type="button" class="text-white bg-black-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-20 py-4 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" style="background-color: black;">Book Now</button>
-      </div>
+        <button type="button" class="text-white bg-black-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-20 py-4 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" style="background-color: black;" onclick="window.location.href='form.html'">Book Now</button>
+    </div>
+    
   </div>
 </section>
 <!--<section class="py-12 px-4">
@@ -151,6 +151,46 @@
   </div>
 </section> -->
 
+<section class="bg-white dark:bg-gray-900" style="background-color: white;">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
+    <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/maintenance.png" alt="maintenance"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Installation</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyMill provides professional treadmill installation services, ensuring precise setup, alignment, and safety protocols. Trust us for a efficient installation process for your treadmill equipment.</p>
+      </div>
+      <!-- Repeat the above structure for other sections -->
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/external-itim2101-fill-itim2101/100/external-technician-male-occupation-avatar-itim2101-fill-itim2101.png" alt="external-technician-male-occupation-avatar-itim2101-fill-itim2101"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Repairs</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyMill excels in treadmill repairs. Our skilled technicians diagnose and fix treadmill issues promptly, ensuring optimal functionality for your fitness equipment.</p>
+      </div>
+      <!-- Repeat the above structure for other sections -->
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/glyph-neue/100/online-support.png" alt="online-support"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Service</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyMill offers top-notch treadmill services, including regular maintenance and repairs. Trust us to keep your treadmill in optimal condition for lasting performance.</p>
+      </div>
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/external-glyph-pongsakorn-tan/100/external-bike-health-glyph-pongsakorn-tan.png" alt="external-bike-health-glyph-pongsakorn-tan"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Exercise Bike Service</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyBike specializes in exercise bike services, offering expert repairs and maintenance. We ensure your exercise bike operates smoothly for effective workouts for you.</p>
+      </div>
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/external-solid-design-circle/100/external-treadmill-hotel-and-services-solid-design-circle.png" alt="external-treadmill-hotel-and-services-solid-design-circle"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Elliptical Cross Trainer Service</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyElliptical delivers expert elliptical cross trainer services, from troubleshooting issues to thorough maintenance, ensuring smooth and efficient workouts for you.</p>
+      </div>
+      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+        <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/000000/gum-.png" alt="gum-"/>
+        <h3 class="mb-4 text-2xl font-bold dark:text-black">Home Gym Service</h3>
+        <p class="text-gray-500 dark:text-gray-400">FixMyHomeGym offers comprehensive home gym services, including installation, repairs, and maintenance. We prioritize your fitness space's functionality and longevity.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -158,14 +198,12 @@
 
 
 
-
-
-<div id="services">
+<!--<div id="services">
 <section class="py-12 px-4">
   <div class="container mx-auto">
     <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
     <div class="container mx-auto py-12">
-      <!-- First Row -->
+
       <div class="flex flex-wrap justify-between mb-6 -mx-2">
         <div class="w-full md:w-6/12 lg:w-6/12 px-2">
           <a href="#" class="block relative group">
@@ -188,7 +226,7 @@
           </a>
         </div>
       </div>
-      <!-- Second Row -->
+     
       <div class="flex flex-wrap justify-between mb-6 -mx-2">
         <div class="w-full md:w-6/12 lg:w-6/12 px-2">
           <a href="#" class="block relative group">
@@ -211,7 +249,7 @@
           </a>
         </div>
       </div>
-      <!-- Third Row -->
+
       <div class="flex flex-wrap justify-between mb-6 -mx-2">
         <div class="w-full md:w-6/12 lg:w-6/12 px-2">
           <a href="#" class="block relative group">
@@ -237,41 +275,43 @@
     </div>
   </div>
 </section>
-</div>
-
+</div>-->
 
 <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
   <br>
   <br>
   <br>
-  <h2 class="text-4xl font-semibold text-center dark:text-white-800 mb-8" >Why Choose Us?</h2>
+  <h2 class="text-4xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
   <br>
-  <div class="relative mx-auto max-w-7xl z-10 grid grid-cols-2 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-4">
-    <div class="reason md:border-r border-gray-300">
-      <br>
-      <h3 class="mb-2 text-2xl font-bold dark:text-black">Certified <br>Professional <br>Technicians</h3>
-    </div>
+  <div class="relative mx-auto max-w-7xl z-10 flex flex-col justify-center items-center pt-14">
+    <div class="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4 ">
+      <div class="reason">
+        <br>
+        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center">Certified <br>Professional <br>Technicians</h3>
+      </div>
 
-    <div class="reason md:border-r border-gray-300">
-      <br>
-      <h3 class="mb-2 text-2xl font-bold dark:text-black">Eco-Friendly <br>Servicing</h3>
-    </div>
+      <div class="reason">
+        <br>
+        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center">Eco-Friendly <br>Servicing</h3>
+      </div>
 
-    <div class="reason md:border-r border-gray-300">
-      <br>
-      <h3 class="mb-2 text-2xl font-bold dark:text-black">100% <br>Satisfaction <br>Guaranteed</h3>
-    </div>
+      <div class="reason">
+        <br>
+        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center">100% <br>Satisfaction <br>Guaranteed</h3>
+      </div>
 
-    <div class="reason">
-      <br>
-      <h3 class="mb-2 text-2xl font-bold dark:text-black">Available <br>Evenings & <br>Weekends</h3>
+      <div class="reason">
+        <br>
+        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center">Available <br>Evenings & <br>Weekends</h3>
+      </div>
     </div>
   </div>
   <br>
   <br>
   <br>
-  
 </section>
+
+
 
 
 
@@ -521,25 +561,25 @@
 </div>
 </div>
 </section>
-
 <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
-  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6" style="height: 298px;">
-      <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white items-center">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
           <div class="flex flex-col items-center justify-center">
-              <h3 class="mb-2 text-4xl font-bold dark:text-black">200+</h3>
-              <h3 class="mb-2 text-2xl font-bold dark:text-black">Professional Technicians</h3>
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">200+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Certified Professional Technicians</h3>
           </div>
           <div class="flex flex-col items-center justify-center">
-              <h3 class="mb-2 text-4xl font-bold dark:text-black">15000+</h3>
-              <h3 class="mb-2 text-2xl font-bold dark:text-black">Services Delivered</h3>
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">15000+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Services Delivered</h3>
           </div>
           <div class="flex flex-col items-center justify-center">
-              <h3 class="mb-2 text-4xl font-bold dark:text-black">25+</h3>
-              <h3 class="mb-2 text-2xl font-bold dark:text-black">Top Cities</h3>
+            <h3 class="mb-2 text-4xl font-bold dark:text-black">25+</h3>
+            <h3 class="mb-2 text-2xl font-bold dark:text-black">Top Cities</h3>
           </div>
       </dl>
-  </div> 
+  </div>
 </section>
+
 
 <!--<section id="contact" class="py-16">
   <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Us for a Free Quote</h2>
@@ -600,7 +640,9 @@
 </div>
             <div>
                 <h2 class="text-3xl font-extrabold">Get In Touch</h2>
-                <form id="myForm" action="http://localhost:3000/submit-form" method="POST">
+                
+   <!--          <form id="myForm" action="http://localhost:3000/submit-form" method="POST"> -->
+    <form id="myForm" action="https://formspree.io/f/mjvqpyvq" method="POST">
                   <div class="space-y-4 mt-8">
                       <input type="text" placeholder="Full Name" name="fullName" required
                           class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
@@ -692,6 +734,8 @@
     </a>
   </div>
 </footer>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-1c88ce3c-5630-4da1-a23c-007d73fd35a7"></div>
 
 <div class="copyright" style="text-align: center;">
   <p>&copy; 2023 by Matric Services</p>
