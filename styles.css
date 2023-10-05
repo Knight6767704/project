@@ -65,4 +65,6 @@ footer a:hover {
   background-color: #ffa500;
 }
 
-
+#hi {
+  gap: 4rem; /* Increase the gap between grid items */
+}
