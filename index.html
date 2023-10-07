@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixmymill|treadmill service</title>
-    <link rel="icon" href="images/Screenshot from 2023-09-06 14-38-59.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixmymill|treadmill service</title>
+  <link rel="icon" href="images/Screenshot from 2023-09-06 14-38-59.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
 </head>
+
 <body>
   <script>
     tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                    }
-                }
-            }
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+          }
         }
-</script>
+      }
+    }
+  </script>
 
-<nav class="fixed px-4 py-2 flex justify-between items-center dark:bg-gray-800" style="background-color:black; height: 79px;">
+  <nav class="fixed px-4 py-2 flex justify-between items-center dark:bg-gray-800"
+    style="background-color:black; height: 79px;">
     <div class="max-w-screen-xl flex items-center space-x-4">
-        <!-- Add space to the right of the logo by adjusting the space between elements -->
-        <a href="https://knight6767704.github.io/project/" class="flex items-center lg:ml-16 xl:ml-40 mt-4">
-            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png" style="width:160px;height:79px;object-fit:cover" width="auto" height="118" srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x" fetchpriority="high">
-        </a>
+      <!-- Add space to the right of the logo by adjusting the space between elements -->
+      <a href="https://knight6767704.github.io/project/" class="flex items-center lg:ml-16 xl:ml-40 mt-4">
+        <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+          style="width:160px;height:79px;object-fit:cover" width="auto" height="118"
+          srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+          fetchpriority="high">
+      </a>
     </div>
     <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
-                <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Hamberger menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-        </button>
+      <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
+        <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Hamberger menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
     </div>
 
     <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-1 mr-80" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700" style="background-color: black;">
+      <ul
+        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-black-100 rounded-lg bg-black-50 md:flex-row md:space-x-20 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-black-700"
+        style="background-color: black;">
         <li>
-          <a href="about.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About Us</a>
+          <a href="about.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">About
+            Us</a>
         </li>
         <li>
-          <a href="service.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
+          <a href="service.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Services</a>
         </li>
         <li>
-          <a href="faq.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
+          <a href="faq.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">FAQ</a>
         </li>
         <li>
-          <a href="contact.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact Us</a>
+          <a href="contact.html"
+            class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact
+            Us</a>
         </li>
       </ul>
     </div>
@@ -62,206 +76,223 @@
 
     <div class="hidden lg:flex">
 
-       
-        <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <span id="menuIcon">
-              <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-              </svg>
-            </span>
-          </button>
 
-       
+      <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <span id="menuIcon">
+          <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </span>
+      </button>
+
+
     </div>
 
-</nav>
+  </nav>
 
 
-<!-- mobile navbar -->
-<div class="navbar-menu relative z-50 hidden">
+  <!-- mobile navbar -->
+  <div class="navbar-menu relative z-50 hidden">
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-50"></div>
-    <nav class="fixed dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-full max-w-full py-6 px-6 border-r overflow-y-auto" style="background-color: black;">
-        <div class="flex items-center justify-between mb-8">
-            <div></div> <!-- This empty div is a placeholder for the logo, adjust its width as needed -->
-            <button class="navbar-close">
-                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </div>
-       
+    <nav
+      class="fixed dark:bg-gray-600 top-0 left-0 bottom-0 flex flex-col w-full max-w-full py-6 px-6 border-r overflow-y-auto"
+      style="background-color: black;">
+      <div class="flex items-center justify-between mb-8">
+        <div></div> <!-- This empty div is a placeholder for the logo, adjust its width as needed -->
+        <button class="navbar-close">
+          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
 
-        <div class="flex flex-col items-center mt-28">
-            <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
-            <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
-            <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
-            <a href="faq.html" class="text-white hover:text-gray-300 py-2 mb-6 text-xl">FAQ</a>
-        </div>
+
+      <div class="flex flex-col items-center mt-28">
+        <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
+        <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
+        <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
+        <a href="faq.html" class="text-white hover:text-gray-300 py-2 mb-6 text-xl">FAQ</a>
+      </div>
 
     </nav>
-</div>
-<style>
+  </div>
+  <style>
     /* Add these styles to make the navbar sticky */
     nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000; /* Adjust the z-index value based on your design needs */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      /* Adjust the z-index value based on your design needs */
     }
-   
+
     /* Rest of your styles */
-</style>
+  </style>
 
 
 
-<script>
+  <script>
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+    var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
+    var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
+
+    // Change the icons inside the button based on previous settings
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
+      '(prefers-color-scheme: dark)').matches)) {
+      themeToggleLightIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleLightIcon_2.classList.remove('hidden');
+      }
+    } else {
+      themeToggleDarkIcon.classList.remove('hidden');
+      if (themeToggleDarkIcon_2) {
+        themeToggleDarkIcon_2.classList.remove('hidden');
+      }
+    }
+
+
+    var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
+    if (themeToggleBtn_2) {
+
+      themeToggleBtn_2.addEventListener('click', function () {
+
+        // toggle icons inside button
+        themeToggleDarkIcon_2.classList.toggle('hidden');
+        themeToggleLightIcon_2.classList.toggle('hidden');
+
+        sync_theme()
+
+      });
+    }
+
+
+    var themeToggleBtn = document.getElementById('theme-toggle');
+
+    themeToggleBtn.addEventListener('click', function () {
+
+      // toggle icons inside button
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+
+      sync_theme()
+
+
+    });
+
+
+    function sync_theme() {
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
         } else {
-            document.documentElement.classList.remove('dark');
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
         }
-
-
-        var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
-        var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-
-        var themeToggleDarkIcon_2 = document.getElementById('theme-toggle-dark-icon-2');
-        var themeToggleLightIcon_2 = document.getElementById('theme-toggle-light-icon-2');
-
-        // Change the icons inside the button based on previous settings
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia(
-            '(prefers-color-scheme: dark)').matches)) {
-            themeToggleLightIcon.classList.remove('hidden');
-            if (themeToggleDarkIcon_2) {
-                themeToggleLightIcon_2.classList.remove('hidden');
-            }
+        // if NOT set via local storage previously
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
         } else {
-            themeToggleDarkIcon.classList.remove('hidden');
-            if (themeToggleDarkIcon_2) {
-                themeToggleDarkIcon_2.classList.remove('hidden');
-            }
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
         }
+      }
+
+    }
 
 
-        var themeToggleBtn_2 = document.getElementById('theme-toggle-2');
-        if (themeToggleBtn_2) {
 
-            themeToggleBtn_2.addEventListener('click', function () {
+    document.addEventListener('DOMContentLoaded', function () {
+      // open
+      const burger = document.querySelectorAll('.navbar-burger');
+      const menu = document.querySelectorAll('.navbar-menu');
 
-                // toggle icons inside button
-                themeToggleDarkIcon_2.classList.toggle('hidden');
-                themeToggleLightIcon_2.classList.toggle('hidden');
-
-                sync_theme()
-
-            });
+      if (burger.length && menu.length) {
+        for (var i = 0; i < burger.length; i++) {
+          burger[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
+            }
+          });
         }
+      }
 
+      // close
+      const close = document.querySelectorAll('.navbar-close');
+      const backdrop = document.querySelectorAll('.navbar-backdrop');
 
-        var themeToggleBtn = document.getElementById('theme-toggle');
-
-        themeToggleBtn.addEventListener('click', function () {
-
-            // toggle icons inside button
-            themeToggleDarkIcon.classList.toggle('hidden');
-            themeToggleLightIcon.classList.toggle('hidden');
-
-            sync_theme()
-
-
-        });
-
-
-        function sync_theme() {
-            // if set via local storage previously
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
-                // if NOT set via local storage previously
-            } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
+      if (close.length) {
+        for (var i = 0; i < close.length; i++) {
+          close[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
             }
-
+          });
         }
+      }
 
 
-
-        document.addEventListener('DOMContentLoaded', function () {
-            // open
-            const burger = document.querySelectorAll('.navbar-burger');
-            const menu = document.querySelectorAll('.navbar-menu');
-
-            if (burger.length && menu.length) {
-                for (var i = 0; i < burger.length; i++) {
-                    burger[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
+      if (backdrop.length) {
+        for (var i = 0; i < backdrop.length; i++) {
+          backdrop[i].addEventListener('click', function () {
+            for (var j = 0; j < menu.length; j++) {
+              menu[j].classList.toggle('hidden');
             }
+          });
+        }
+      }
+    });
+  </script>
 
-            // close
-            const close = document.querySelectorAll('.navbar-close');
-            const backdrop = document.querySelectorAll('.navbar-backdrop');
-
-            if (close.length) {
-                for (var i = 0; i < close.length; i++) {
-                    close[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-        
-
-            if (backdrop.length) {
-                for (var i = 0; i < backdrop.length; i++) {
-                    backdrop[i].addEventListener('click', function () {
-                        for (var j = 0; j < menu.length; j++) {
-                            menu[j].classList.toggle('hidden');
-                        }
-                    });
-                }
-            }
-        });
-</script>
-   
-<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
-  <br>
-  <br>
-  <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+  <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
     <br>
     <br>
-    <br>
-    <br>
-    <br>
-      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">YOUR ONE-STOP SOLUTION <br>FOR PROFESSIONAL FITNESS <br>EQUIPMENT SERVICING.</h1>
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
       <br>
-      <div id="comp-j7epyx99" class="KcpHeO tz5f0K comp-j7epyx99 wixui-rich-text" data-testid="richTextElement"><h6 class="font_6 wixui-rich-text__text" style="line-height:1.4em; text-align:center; font-size:24px;"><span style="font-family:barlow-medium,barlow,sans-serif;" class="wixui-rich-text__text"><span style="color:#000000;" class="wixui-rich-text__text"><span style="letter-spacing:0.02em;" class="wixui-rich-text__text">Let Fixmymill Make Your Fitness Equipment <br>Run Like New Again</span></span></span></h6></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1
+        class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        YOUR ONE-STOP SOLUTION <br>FOR PROFESSIONAL FITNESS <br>EQUIPMENT SERVICING.</h1>
+      <br>
+      <div id="comp-j7epyx99" class="KcpHeO tz5f0K comp-j7epyx99 wixui-rich-text" data-testid="richTextElement">
+        <h6 class="font_6 wixui-rich-text__text" style="line-height:1.4em; text-align:center; font-size:24px;"><span
+            style="font-family:barlow-medium,barlow,sans-serif;" class="wixui-rich-text__text"><span
+              style="color:#000000;" class="wixui-rich-text__text"><span style="letter-spacing:0.02em;"
+                class="wixui-rich-text__text">Let Fixmymill Make Your Fitness Equipment <br>Run Like New
+                Again</span></span></span></h6>
+      </div>
       <br>
       <br>
       <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-        <button type="button" class="text-white bg-black-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-20 py-4 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700" style="background-color: black;" onclick="window.location.href='form.html'">Book Now</button>
+        <button type="button"
+          class="text-white bg-black-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-xl px-20 py-4 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          style="background-color: black;" onclick="window.location.href='form.html'">Book Now</button>
+      </div>
+
     </div>
-    
-  </div>
-</section>
-<!--<section class="py-12 px-4">
+  </section>
+  <!--<section class="py-12 px-4">
   <div class="container mx-auto">
       <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
       <div class="container mx-auto py-12">
@@ -340,50 +371,70 @@
   </div>
 </section> -->
 
-<section class="bg-white dark:bg-gray-900" style="background-color: white;">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
-    <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
+  <section class="bg-white dark:bg-gray-900" style="background-color: white;">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex flex-col items-center">
+      <h2 class="text-4xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/maintenance.png" alt="maintenance"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Installation</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyMill provides professional treadmill installation services, ensuring precise setup, alignment, and safety protocols. Trust us for a efficient installation process for your treadmill equipment.</p>
-      </div>
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/external-itim2101-fill-itim2101/100/external-technician-male-occupation-avatar-itim2101-fill-itim2101.png" alt="external-technician-male-occupation-avatar-itim2101-fill-itim2101"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Repairs</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyMill excels in treadmill repairs. Our skilled technicians diagnose and fix treadmill issues promptly, ensuring optimal functionality for your fitness equipment.</p>
-      </div>
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/glyph-neue/100/online-support.png" alt="online-support"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Service</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyMill offers top-notch treadmill services, including regular maintenance and repairs. Trust us to keep your treadmill in optimal condition for lasting performance.</p>
-      </div>
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/external-glyph-pongsakorn-tan/100/external-bike-health-glyph-pongsakorn-tan.png" alt="external-bike-health-glyph-pongsakorn-tan"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Exercise Bike Service</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyBike specializes in exercise bike services, offering expert repairs and maintenance. We ensure your exercise bike operates smoothly for effective workouts for you.</p>
-      </div>
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/external-solid-design-circle/100/external-treadmill-hotel-and-services-solid-design-circle.png" alt="external-treadmill-hotel-and-services-solid-design-circle"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Elliptical Cross Trainer Service</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyElliptical delivers expert elliptical cross trainer services, from troubleshooting issues to thorough maintenance, ensuring smooth and efficient workouts for you.</p>
-      </div>
-      <div class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
-        <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/000000/gum-.png" alt="gum-"/>
-        <h3 class="mb-4 text-2xl font-bold dark:text-black">Home Gym Service</h3>
-        <p class="text-gray-500 dark:text-gray-400">FixMyHomeGym offers comprehensive home gym services, including installation, repairs, and maintenance. We prioritize your fitness space's functionality and longevity.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/maintenance.png" alt="maintenance" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Installation</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyMill provides professional treadmill installation services,
+            ensuring precise setup, alignment, and safety protocols. Trust us for a efficient installation process for
+            your treadmill equipment.</p>
+        </div>
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100"
+            src="https://img.icons8.com/external-itim2101-fill-itim2101/100/external-technician-male-occupation-avatar-itim2101-fill-itim2101.png"
+            alt="external-technician-male-occupation-avatar-itim2101-fill-itim2101" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Repairs</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyMill excels in treadmill repairs. Our skilled technicians
+            diagnose and fix treadmill issues promptly, ensuring optimal functionality for your fitness equipment.</p>
+        </div>
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100" src="https://img.icons8.com/glyph-neue/100/online-support.png"
+            alt="online-support" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Treadmill Service</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyMill offers top-notch treadmill services, including regular
+            maintenance and repairs. Trust us to keep your treadmill in optimal condition for lasting performance.</p>
+        </div>
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100"
+            src="https://img.icons8.com/external-glyph-pongsakorn-tan/100/external-bike-health-glyph-pongsakorn-tan.png"
+            alt="external-bike-health-glyph-pongsakorn-tan" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Exercise Bike Service</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyBike specializes in exercise bike services, offering expert
+            repairs and maintenance. We ensure your exercise bike operates smoothly for effective workouts for you.</p>
+        </div>
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100"
+            src="https://img.icons8.com/external-solid-design-circle/100/external-treadmill-hotel-and-services-solid-design-circle.png"
+            alt="external-treadmill-hotel-and-services-solid-design-circle" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Elliptical Cross Trainer Service</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyElliptical delivers expert elliptical cross trainer services,
+            from troubleshooting issues to thorough maintenance, ensuring smooth and efficient workouts for you.</p>
+        </div>
+        <div
+          class="card bg-white dark:bg-primary-900 rounded-lg p-8 shadow-md transition duration-300 ease-in-out transform hover:scale-105 max-w-xs w-full flex flex-col items-center justify-center">
+          <img width="100" height="100" src="https://img.icons8.com/ios-filled/100/000000/gum-.png" alt="gum-" />
+          <h3 class="mb-4 text-2xl font-bold dark:text-black">Home Gym Service</h3>
+          <p class="text-gray-500 dark:text-gray-400">FixMyHomeGym offers comprehensive home gym services, including
+            installation, repairs, and maintenance. We prioritize your fitness space's functionality and longevity.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section> 
+  </section>
 
 
 
 
 
-<!--<div id="services">
+  <!--<div id="services">
 <section class="py-12 px-4">
   <div class="container mx-auto">
     <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Our Services</h2>
@@ -462,45 +513,48 @@
 </section>
 </div>-->
 
-<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
-  <br>
-  <br>
-  <br>
-  <h2 class="text-4xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
-  <br>
-  <div class="relative mx-auto max-w-7xl z-10 flex flex-col justify-center items-center pt-14">
-    <div class="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4 ">
-      <div class="reason">
-        <br>
-        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Certified <br>Professional <br>Technicians</h3>
-      </div>
+  <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+    <br>
+    <br>
+    <br>
+    <h2 class="text-4xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
+    <br>
+    <div class="relative mx-auto max-w-7xl z-10 flex flex-col justify-center items-center pt-14">
+      <div class="grid grid-cols-2 gap-10 sm:grid-cols-2 lg:grid-cols-4 ">
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Certified <br>Professional
+            <br>Technicians
+          </h3>
+        </div>
 
-      <div class="reason">
-        <br>
-        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Eco-Friendly <br>Servicing</h3>
-      </div>
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Eco-Friendly <br>Servicing</h3>
+        </div>
 
-      <div class="reason">
-        <br>
-        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">100% <br>Satisfaction <br>Guaranteed</h3>
-      </div>
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">100% <br>Satisfaction <br>Guaranteed</h3>
+        </div>
 
-      <div class="reason">
-        <br>
-        <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Available <br>Evenings & <br>Weekends</h3>
+        <div class="reason">
+          <br>
+          <h3 class="mb-2 text-2xl font-bold dark:text-black text-center ml-4">Available <br>Evenings & <br>Weekends
+          </h3>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-</section>
+    <br>
+    <br>
+    <br>
+  </section>
 
 
 
 
 
- <!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
 
  <br> <br>
       <h2 class="text-3xl font-semibold text-center dark:text-white-800 mb-8">Why Choose Us?</h2>
@@ -603,7 +657,7 @@
 
 
 
-<!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
   <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
       <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Brands We Serve</h2>
       <div class="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-4 dark:text-gray-400">
@@ -651,7 +705,7 @@
       </div>
   </div>
 </section> -->
-<!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: white;">
   <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
     <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Brands We Serve</h2>
     <div class="carousel-container">
@@ -684,68 +738,104 @@
     </div>
   </div>
 </section> -->
-<section class="bg-white dark:bg-gray-900" style="background-color: white;">
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
-    <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Brands We Serve</h2>
-<div class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-<div class="w-full inline-flex flex-nowrap">
-  <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-      <li>
-        <img src="images/cockatoo1.webp" alt="cockatoo_edited.png" style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/maxprologi1.webp" alt="maxprologi_edited.png" style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/sketra.png" alt="" style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt="" style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/powermax logo1.webp" alt="powermax logo.jpg" style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216" height="56">
-      </li>
-      <li>
-        <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png" style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31" fetchpriority="high">
-      </li>
-      <li>
-        <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png" style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63" fetchpriority="high">
-      </li>
-  </ul>
-  <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true" >
-    <li>
-      <img src="images/cockatoo1.webp" alt="cockatoo_edited.png" style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/maxprologi1.webp" alt="maxprologi_edited.png" style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/sketra.png" alt="" style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt="" style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/powermax logo1.webp" alt="powermax logo.jpg" style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216" height="56">
-    </li>
-    <li>
-      <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png" style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31" fetchpriority="high">
-    </li>
-    <li>
-      <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png" style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63" fetchpriority="high">
-    </li>
-  </ul>
-</div>
-</div>
-</div>
-</section>
-<!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+  <section class="bg-white dark:bg-gray-900" style="background-color: white;">
+    <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+      <h2
+        class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">
+        Brands We Serve</h2>
+      <div
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+        <div class="w-full inline-flex flex-nowrap">
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li>
+              <img src="images/cockatoo1.webp" alt="cockatoo_edited.png"
+                style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/maxprologi1.webp" alt="maxprologi_edited.png"
+                style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sketra.png" alt=""
+                style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt=""
+                style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/powermax logo1.webp" alt="powermax logo.jpg"
+                style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216"
+                height="56">
+            </li>
+            <li>
+              <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png"
+                style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png"
+                style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63"
+                fetchpriority="high">
+            </li>
+          </ul>
+          <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            aria-hidden="true">
+            <li>
+              <img src="images/cockatoo1.webp" alt="cockatoo_edited.png"
+                style="width: 200px; height: 97px; object-fit: cover; object-position: 50% 50%;" width="200" height="97"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/maxprologi1.webp" alt="maxprologi_edited.png"
+                style="width: 247px; height: 44px; object-fit: cover; object-position: 50% 50%;" width="247" height="44"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sketra.png" alt=""
+                style="width: 247px; height: 50px; object-fit: cover; object-position: 50% 50%;" width="247" height="50"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/[removal.ai]_c9c8879f-160a-4d27-b104-dee84dfd197b-stunner1.png" alt=""
+                style="width: 247px; height: 90px; object-fit: cover; object-position: 50% 50%;" width="247" height="90"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/powermax logo1.webp" alt="powermax logo.jpg"
+                style="width: 221px; height: 73px; object-fit: cover; object-position: 50% 50%;" width="221" height="73"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/cult1.webp" alt="" style="width:216px;height:56px;object-fit:cover" width="216"
+                height="56">
+            </li>
+            <li>
+              <img src="images/reachlogodited1.webp" alt="reachlogo (1)_edited.png"
+                style="width: 204px; height: 31px; object-fit: cover; object-position: 50% 50%;" width="204" height="31"
+                fetchpriority="high">
+            </li>
+            <li>
+              <img src="images/sparnodlogo1.webp" alt="sparnodlogo.png"
+                style="width: 276px; height: 63px; object-fit: cover; object-position: 50% 50%;" width="276" height="63"
+                fetchpriority="high">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
   <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
       <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white" id="hi">
           <div class="flex flex-col items-center justify-center">
@@ -763,30 +853,31 @@
       </dl>
   </div>
 </section> -->
-<section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
-  <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-    <dl class="grid gap-8 sm:gap-16 lg:gap-32 mx-auto text-gray-900 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dark:text-white">
-      <div class="flex flex-col items-center justify-center">
-        <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">200+</h3>
-        <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Professional Technicians <br><br> </h3>
-      </div>
-      <div class="flex flex-col items-center justify-center">
-        <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">15000+</h3>
-        <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Services Delivered <br> <br></h3>
-      </div>
-      <div class="flex flex-col items-center justify-center">
-        <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">25+</h3>
-        <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Top Cities <br> <br></h3>
-      </div>
-    </dl>
-  </div>
-</section>
+  <section class="bg-white dark:bg-gray-900" style="background-color: #ffa500;">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl
+        class="grid gap-8 sm:gap-16 lg:gap-32 mx-auto text-gray-900 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dark:text-white">
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">200+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Professional Technicians <br><br> </h3>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">15000+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Services Delivered <br> <br></h3>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="mb-2 text-4xl lg:text-6xl font-bold dark:text-black">25+</h3>
+          <h3 class="mb-2 text-xl lg:text-2xl font-bold dark:text-black">Top Cities <br> <br></h3>
+        </div>
+      </dl>
+    </div>
+  </section>
 
 
 
 
 
-<!--<section id="contact" class="py-16">
+  <!--<section id="contact" class="py-16">
   <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Us for a Free Quote</h2>
   <div class="call-now-section text-center">
     <a href="tel:08062177481" class="call-now-link">Call Now @ <span class="phone-number">08062177481</span></a>
@@ -831,160 +922,187 @@
   <br>
   <br>
 </section> -->
-<div id="contact">
-<section id="contact" class="py-16">
-  <h2 class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">Contact Us for a Free Quote</h2>
-  <div class="call-now-section text-center text-3xl">
-    <a href="tel:08062177481" class="call-now-link" style="text-decoration: underline;">Call Now @ <span class="phone-number">08062177481</span></a>
-  </div>
-<div class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white text-[#333] my-6 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-white-400 before:h-full max-md:before:hidden">
-  <div class="z-10 relative h-full max-md:min-h-[350px]">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7600.529599808223!2d83.31703200053772!3d17.73215799348536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394345edcc4fb7%3A0x84e06fa1a732211f!2sa-Hub%2C%20Andhra%20University%20Incubation%20Center!5e0!3m2!1sen!2sin!4v1694247230340!5m2!1sen!2sin"
-        class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0"
-        allowfullscreen></iframe>
-</div>
-            <div>
-                <h2 class="text-3xl font-extrabold">Get In Touch</h2>
-                
-   <!--          <form id="myForm" action="http://localhost:3000/submit-form" method="POST"> -->
-    <form id="myForm" action="https://formspree.io/f/mjvqpyvq" method="POST">
-                  <div class="space-y-4 mt-8">
-                      <input type="text" placeholder="Full Name" name="fullName" required
-                          class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
-                      <input type="tel" placeholder="Phone No." name="phone" required
-                          pattern="[0-9]{10}" title="Enter a valid 10-digit phone number"
-                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
-              
-                      <input type="text" placeholder="Subject" name="subject" required
-                          class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
-              
-                      <textarea placeholder="Write Message" name="message" required
-                          class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg"
-                          style="height: 200px; width: 100%;"></textarea>
-                  </div>
-              
-                  <button type="submit"
-                      class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]"
-                      style="background-color: #ffa500; border-radius: 8px;">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
-                          viewBox="0 0 548.244 548.244">
-                          <path fill-rule="evenodd"
-                              d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
-                              clip-rule="evenodd" data-original="#000000" />
-                      </svg>
-                      Send Message
-                  </button>
-              </form>
-              
-              
-              
-              
-            </div>
-            
+  <div id="contact">
+    <section id="contact" class="py-16">
+      <h2
+        class="mb-8 lg:mb-16 text-3xl font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-black md:text-4xl">
+        Contact Us for a Free Quote</h2>
+      <div class="call-now-section text-center text-3xl">
+        <a href="tel:08062177481" class="call-now-link" style="text-decoration: underline;">Call Now @ <span
+            class="phone-number">08062177481</span></a>
+      </div>
+      <div
+        class="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-10 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-3xl max-w-6xl mx-auto bg-white text-[#333] my-6 font-[sans-serif] before:absolute before:right-0 before:w-[300px] before:bg-white-400 before:h-full max-md:before:hidden">
+        <div class="z-10 relative h-full max-md:min-h-[350px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7600.529599808223!2d83.31703200053772!3d17.73215799348536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a394345edcc4fb7%3A0x84e06fa1a732211f!2sa-Hub%2C%20Andhra%20University%20Incubation%20Center!5e0!3m2!1sen!2sin!4v1694247230340!5m2!1sen!2sin"
+            class="left-0 top-0 h-full w-full rounded-t-lg lg:rounded-tr-none lg:rounded-bl-lg" frameborder="0"
+            allowfullscreen></iframe>
         </div>
-</section>
-</div>
+        <div>
+          <h2 class="text-3xl font-extrabold">Get In Touch</h2>
 
-<footer class="bg-white dark:bg-gray-900" style="background-color: black;">
-  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+          <!--          <form id="myForm" action="http://localhost:3000/submit-form" method="POST"> -->
+          <form id="myForm" action="https://formspree.io/f/mjvqpyvq" method="POST">
+            <div class="space-y-4 mt-8">
+              <input type="text" placeholder="Full Name" name="fullName" required
+                class="px-2 py-3 bg-white w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+              <input type="tel" placeholder="Phone No." name="phone" required pattern="[0-9]{10}"
+                title="Enter a valid 10-digit phone number"
+                class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+
+              <input type="text" placeholder="Subject" name="subject" required
+                class="px-2 py-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg" />
+
+              <textarea placeholder="Write Message" name="message" required
+                class="px-2 pt-3 bg-white text-black w-full text-sm border-b-2 focus:border-[#ffa500] outline-none rounded-lg"
+                style="height: 200px; width: 100%;"></textarea>
+            </div>
+
+            <button type="submit"
+              class="mt-8 flex items-center justify-center text-sm w-full rounded px-4 py-2.5 font-semibold bg-[#ffa500] text-white hover:bg-[#222]"
+              style="background-color: #ffa500; border-radius: 8px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
+                viewBox="0 0 548.244 548.244">
+                <path fill-rule="evenodd"
+                  d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z"
+                  clip-rule="evenodd" data-original="#000000" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+
+
+
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer class="bg-white dark:bg-gray-900" style="background-color: black;">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-0 md:mb-0">
           <a href="https://knight6767704.github.io/project/" class="flex items-center">
-            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png" style="width:226px; height:111px; object-fit:cover" width="auto" height="118" srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x" fetchpriority="high">
-        </a>
-        <div>
-            <p class="text-left ml-6" style="color: white;">Your Trusted Fitness Equipment Service Provider across 25+ Indian Cities. Installation, Maintenance, Repair Services for Residential and Commercial Clients. Committed to Customer Satisfaction.</p>
+            <img src="images/Main logo Fix (1).svg" alt="Main logo Fix (4).png"
+              style="width:226px; height:111px; object-fit:cover" width="auto" height="118"
+              srcset="https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_257,h_118,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Main%20logo%20Fix%20(4).png 1x, https://static.wixstatic.com/media/47e306_47523a2e9fb04ec2b3d2e5b21069cef2~mv2.png/v1/crop/x_0,y_115,w_425,h_195/fill/w_514,h_236,al_c,lg_1,q_85,enc_auto/Main%20logo%20Fix%20(4).png 2x"
+              fetchpriority="high">
+          </a>
+          <div>
+            <p class="text-left ml-6" style="color: white;">Your Trusted Fitness Equipment Service Provider across 25+
+              Indian Cities. Installation, Maintenance, Repair Services for Residential and Commercial Clients.
+              Committed to Customer Satisfaction.</p>
+          </div>
+          <div class="ml-6 mt-12">
+            <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
+              <!-- Facebook Icon -->
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- Instagram Icon -->
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl">
+              <!-- Adjusted font size to text-2xl -->
+              <!-- LinkedIn Icon -->
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+
         </div>
-            <div class="flex mt-20 ml-6">
-              <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
-                <!-- Facebook Icon -->
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
-                <!-- Instagram Icon -->
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> <!-- Adjusted font size to text-2xl -->
-                <!-- LinkedIn Icon -->
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </div>
-        </div>
+
         @nbsp;
-        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
           <div class="text-gray-500 dark:text-white font-medium mr-16">
             <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Serving in</h2>
             <ul class="text-gray-500 dark:text-white font-medium">
-                <li class="mb-2"> <!-- No need for flex and items-start here -->
-                    <p class="mb-0">Visakhapatnam</p>
-                </li>
-                <li class="mb-2"> <!-- No need for flex and items-start here -->
-                    <p class="mb-0">Hyderabad</p>
-                </li>
-                <li class="mb-2"> <!-- No need for flex and items-start here -->
-                    <p class="mb-0">Bengaluru</p>
-                </li>
-                <li class="mb-2"> <!-- No need for flex and items-start here -->
-                    <p class="mb-0" style="text-decoration: underline;">Other Cities</p>
-                </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Visakhapatnam</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Hyderabad</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0">Bengaluru</p>
+              </li>
+              <li class="mb-2"> <!-- No need for flex and items-start here -->
+                <p class="mb-0" style="text-decoration: underline;">Other Cities</p>
+              </li>
             </ul>
-        </div>
-        
-            <div>
-                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick  Links</h2>
-                <ul class="text-gray-500 dark:text-white font-medium">
-                    <li class="mb-4">
-                      <p style="text-decoration: underline;">Privacy Policy</p>
-                    </li>
-                    <li class="mb-4">
-                      <p style="text-decoration: underline;">Refund Policy</p>
-                    </li>
-                    <li class="mb-4">
-                      <p style="text-decoration: underline;">Shipping Policy</p>
-                    </li>
-                    <li class="mb-4">
-                      <p style="text-decoration: underline;">Terms & Conditions</p>
-                    </li>
-                </ul>
-            </div>
-            <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
-              <ul class="text-gray-500 dark:text-white font-medium">
-                <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
-                  <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
-                  <p class="mb-0">08062177481</p> <!-- Phone number -->
-                </li>
-                <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
-                  <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
-                  <a href="mailto:contact@fixmymill.com">
-                    <p class="mb-0" style="text-decoration: underline;">contact@fixmymill.com</p>
+          </div>
+
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Quick Links</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4">
+                <p style="text-decoration: underline;">Privacy Policy</p>
+              </li>
+              <li class="mb-4">
+                <p style="text-decoration: underline;">Refund Policy</p>
+              </li>
+              <li class="mb-4">
+                <p style="text-decoration: underline;">Shipping Policy</p>
+              </li>
+              <li class="mb-4">
+                <p style="text-decoration: underline;">Terms & Conditions</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact Us</h2>
+            <ul class="text-gray-500 dark:text-white font-medium">
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
+                <p class="mb-0">08062177481</p> <!-- Phone number -->
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
+                <a href="mailto:contact@fixmymill.com">
+                  <p class="mb-0" style="text-decoration: underline;">contact@fixmymill.com</p>
                 </a>
-                
-                </li>
-                <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
-                  <i class="fas fa-map-marker-alt mr-2 mt-1"></i> <!-- Location icon -->
-                  <p class="mb-0">A-hub, Andhra University, Maddilapalem, Visakhapatnam, 530003, Andhra Pradesh, India</p> <!-- Address -->
-                </li>
-              </ul>
-              
-            </div>
+
+              </li>
+              <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
+                <i class="fas fa-map-marker-alt mr-2 mt-1"></i> <!-- Location icon -->
+                <p class="mb-0">A-hub, Andhra University, Maddilapalem, Visakhapatnam, 530003, Andhra Pradesh, India</p>
+                <!-- Address -->
+              </li>
+            </ul>
+
+          </div>
+          <!--
+            <div class="mt-60 lg:mt-0 lg:mr-20">
+              <a href="#" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/fixmymill/" class="text-white hover:text-blue-400 mx-2 text-2xl"> 
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div> -->
         </div>
-    </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between text-white ml-6">
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between text-white ml-6">
         <p class="text-l sm:text-center ">© 2023 by Matric Services. All Rights Reserved.
         </p>
-        
+
+      </div>
     </div>
-  </div>
-</footer>
-<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  </footer>
+
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
   <div class="elfsight-app-1c88ce3c-5630-4da1-a23c-007d73fd35a7"></div>
-<script src="tailwind.config.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-<script src="navbar.js"></script>
-<script src="app.js"></script>
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="navbar.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
-
-
