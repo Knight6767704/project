@@ -39,7 +39,7 @@ style="background-color:black; height: 110px;">
 </div>
 <div class="lg:hidden">
   <button class="navbar-burger flex items-center text-violet-600 dark:text-gray-100 p-1" id="navbar_burger">
-    <svg class="block h-6 w-6 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+    <svg class="block h-8 w-10 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <title>Hamberger menu</title>
       <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
     </svg>
@@ -74,19 +74,18 @@ style="background-color:black; height: 110px;">
 
 <div class="hidden lg:flex">
 
-
   <button id="theme-toggle" data-collapse-toggle="navbar-sticky" type="button"
-    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-    aria-controls="navbar-sticky" aria-expanded="false">
-    <span class="sr-only">Open main menu</span>
-    <span id="menuIcon">
-      <svg id="theme-toggle-light-icon" class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-        fill="none" viewBox="0 0 17 14">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15" />
+  class="inline-flex items-center p-3 w-12 h-10 md:w-16 md:h-12 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+  aria-controls="navbar-sticky" aria-expanded="false">
+  <span class="sr-only">Open main menu</span>
+  <span id="menuIcon">
+      <svg id="theme-toggle-light-icon" class="w-8 h-8 md:w-10 md:h-10" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
       </svg>
-    </span>
-  </button>
+  </span>
+</button>
 
 
 </div>
@@ -103,7 +102,7 @@ style="background-color:black; height: 110px;">
         <div class="flex items-center justify-between mb-8">
             <div></div> <!-- This empty div is a placeholder for the logo, adjust its width as needed -->
             <button class="navbar-close">
-                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                <svg class="h-12 w-16 text-gray-400 cursor-pointer hover:text-gray-500"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -112,7 +111,6 @@ style="background-color:black; height: 110px;">
        
 
         <div class="flex flex-col items-center mt-28">
-            <a href="/about-us" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us <br><br> <br><br><br><br><br></a>
             <a href="about.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">About Us</a>
             <a href="service.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Services</a>
             <a href="contact.html" class="text-white hover:text-gray-300 py-2 mb-6 text-2xl">Contact Us</a>
@@ -455,7 +453,9 @@ style="background-color:black; height: 110px;">
             <ul class="text-gray-500 dark:text-white font-medium">
               <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
                 <i class="fas fa-phone mr-2 mt-1"></i> <!-- Call icon -->
-                <p class="mb-0">08062177481</p> <!-- Phone number -->
+                <a href="tel:08062177481">
+                  <p class="mb-0">08062177481</p> <!-- Phone number -->
+                  </a>
               </li>
               <li class="mb-4 flex items-start"> <!-- Use items-start to align items vertically from the top -->
                 <i class="fas fa-envelope mr-2 mt-1"></i> <!-- Message icon -->
