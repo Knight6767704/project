@@ -33,31 +33,17 @@
 #hi {
   gap: 4rem; /* Increase the gap between grid items */
 }
-
-.niv {
-  font-family: 'Gotham Rounded';
+@font-face {
+  font-family: 'Gotham Rounded Medium';
+  src: url('images/Gotham\ Rounded\ Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
 }
 
-.why {
-  font-family: 'Gotham Rounded';
+body {
+  font-family: 'Gotham Rounded Medium';
 }
 
-.media {
-  font-family: 'Gotham Rounded';
-}
-
-.brand {
-  font-family: 'Gotham Rounded';
-}
-
-.contact {
-  font-family: 'Gotham Rounded';
-}
-
-.foo {
-  font-family: 'Gotham Rounded';
-}
-
-.services {
-  font-family: 'Gotham Rounded';
+.hero {
+  font-family: sans-serif;
 }
