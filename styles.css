@@ -24,6 +24,9 @@
   }
 }
 
+.niv {
+  font-family: Rubik;
+}
 
 /* Add this CSS code to your stylesheet */
 .card:hover {
@@ -46,4 +49,15 @@ body {
 
 .hero {
   font-family: sans-serif;
+}
+.services svg {
+  width: 100%; /* Set the width of SVG to 100% */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  max-width: 515px; /* Set a maximum width for the SVG to avoid becoming too large */
+}
+
+@media (max-width: 768px) {
+  .services svg {
+    max-width: 100%; /* Allow the SVG to take up the full width on smaller screens */
+  }
 }
