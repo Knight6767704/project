@@ -24,9 +24,7 @@
   }
 }
 
-.niv {
-  font-family: Rubik;
-}
+
 
 /* Add this CSS code to your stylesheet */
 .card:hover {
@@ -36,15 +34,10 @@
 #hi {
   gap: 4rem; /* Increase the gap between grid items */
 }
-@font-face {
-  font-family: 'Gotham Rounded Medium';
-  src: url('images/Gotham\ Rounded\ Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-}
+
 
 body {
-  font-family: 'Gotham Rounded Medium';
+  font-family: Rubik;
 }
 
 .hero {
