@@ -54,3 +54,15 @@ body {
     max-width: 100%; /* Allow the SVG to take up the full width on smaller screens */
   }
 }
+
+@media (max-width: 768px) {
+  .privacy svg {
+    height: auto;
+    width: 360px;/* Allow the SVG to take up the full width on smaller screens */
+  }
+}
+/* Style only the specific list with the 'dot-bullet-list' class */
+ul.dot-bullet-list {
+list-style-type: disc; /* Use 'disc' for dot bullets */
+}
+
