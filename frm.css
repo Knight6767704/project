@@ -16,7 +16,6 @@
     src:url('Rubik-VariableFont_wght.ttf') format('truetype');
     font-weight:normal;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -44,23 +43,26 @@ body {
 .wrap>.first {
     background-color: black;
 }
-
 .nav-container {
     width: 100%;
-    background-color: rgba(23, 14, 14, 0.5);
     height: 140px;
-    background: url('https://www.fixmycycle.com/images/header1.png');
-    background-size: cover;
+   background-image: url('Untitled\ design.png');
+    
+    background-size: cover; 
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity:0.6;
+    
 
 }
 
 .nav-container>h1 {
-    color: #ffa500;
-
+    color:#ffa500 !important;
+    text-shadow: 1ch;
+    
+     
 }
 
 #logo {
