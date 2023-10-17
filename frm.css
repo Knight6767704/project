@@ -16,6 +16,13 @@
     src:url('Rubik-VariableFont_wght.ttf') format('truetype');
     font-weight:normal;
 }
+
+.nav-ele{
+    color:white !important;
+    margin-left:100px;
+    font-weight:bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -478,4 +485,26 @@ input::placeholder {
         width: 50rem;
     }
 
+}
+.footer-headings{
+    font-size:20px;
+}
+.footer-row{
+    color:white;
+    font-family:Rubik;
+    text-align:left;
+}
+
+.footer-row ul{
+    list-style: none;
+}
+.footer-row a{
+    color:white !important;
+}
+.socialmedia{
+    font-size:35px;
+    text-decoration: none;
+}
+.socialmedia:hover{
+  color:blue;
 }
