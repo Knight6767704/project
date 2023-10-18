@@ -16,13 +16,11 @@
     src:url('Rubik-VariableFont_wght.ttf') format('truetype');
     font-weight:normal;
 }
-
 .nav-ele{
     color:white !important;
     margin-left:100px;
     font-weight:bold;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +37,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #ffa500;
-
 }
 
 .wrap {
@@ -54,22 +51,18 @@ body {
     width: 100%;
     height: 140px;
    background-image: url('Untitled\ design.png');
-    
     background-size: cover; 
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0.6;
-    
-
+    opacity:1;
 }
 
 .nav-container>h1 {
     color:#ffa500 !important;
     text-shadow: 1ch;
-    
-     
+    font-weight:500;
 }
 
 #logo {
@@ -319,7 +312,7 @@ input::placeholder {
 }
 
 .info1 {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     width: 100%;
     padding: 1rem;
 }
@@ -329,8 +322,13 @@ input::placeholder {
     padding: 2rem;
     font-family:Rubik;
     display: flex;
+    /* border:2px solid; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
     flex-direction: column;
-    width: 90%;
+    width:60%;
+    background-color: white;
+    /* box-shadow:10px 10px 3px 5px black; */
+    border-radius:20px;
     margin-inline: auto;
     align-items: center;
     gap: 1rem;
@@ -345,14 +343,14 @@ input::placeholder {
     font-size: 1rem;
     width: 100%;
     display: grid;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     width: 100%;
     border-color: white;
     padding: 0.8rem;
     color: black;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
+    justify-content:center;
+    justify-items:center;
 }
 
 .info2>h1>span {
@@ -396,6 +394,10 @@ input::placeholder {
     .section3>fieldset {
         width: 80%;
     }
+    .section4{
+        width:80%;
+        box-shadow:0px 0px 0px 0px;
+    }
 
     .step2 {
         grid-template-columns: 40% 40%;
@@ -409,9 +411,6 @@ input::placeholder {
         font-size: 1.5rem;
     }
 
-    .section4 {
-        width: 100%;
-    }
     #transcation{
         font-size: 1rem;
     }
