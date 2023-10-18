@@ -261,8 +261,8 @@ function Step4() {
 
 
     let info2 = document.querySelectorAll(".info2>h1")
-    info2[0].children[0].textContent = formObject['total'] + "/-";
-    info2[1].children[0].textContent = formObject['date'] + "/-";
+    info2[1].children[0].textContent = formObject['total'] + "/-";
+    // info2[1].children[0].textContent = formObject['date'] + "/-";
 
 }
 
