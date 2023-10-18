@@ -16,13 +16,11 @@
     src:url('Rubik-VariableFont_wght.ttf') format('truetype');
     font-weight:normal;
 }
-
 .nav-ele{
     color:white !important;
     margin-left:100px;
     font-weight:bold;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +37,6 @@ body {
     width: 100%;
     height: 100%;
     background-color: #ffa500;
-
 }
 
 .wrap {
@@ -54,22 +51,18 @@ body {
     width: 100%;
     height: 140px;
    background-image: url('Untitled\ design.png');
-    
     background-size: cover; 
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity:0.6;
-    
-
+    opacity:1;
 }
 
 .nav-container>h1 {
     color:#ffa500 !important;
     text-shadow: 1ch;
-    
-     
+    font-weight:500;
 }
 
 #logo {
@@ -319,9 +312,10 @@ input::placeholder {
 }
 
 .info1 {
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
     width: 100%;
     padding: 1rem;
+    padding-bottom:0px;
 }
 
 /**    font-size: 1.5rem;*/
@@ -329,8 +323,13 @@ input::placeholder {
     padding: 2rem;
     font-family:Rubik;
     display: flex;
+    /* border:2px solid; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19); */
     flex-direction: column;
-    width: 90%;
+    width:60%;
+    /* background-color: white; */
+    /* box-shadow:10px 10px 3px 5px black; */
+    border-radius:20px;
     margin-inline: auto;
     align-items: center;
     gap: 1rem;
@@ -342,28 +341,41 @@ input::placeholder {
 }
 
 .info2>h1 {
-    font-size: 1rem;
     width: 100%;
     display: grid;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     width: 100%;
     border-color: white;
     padding: 0.8rem;
     color: black;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: 0.5fr 0.5fr;
+    justify-content:center;
+    justify-items:center;
+
 }
 
 .info2>h1>span {
     color: black;
+    justify-self:start;
+}
+
+.transcation{
+    font-size:18px;
+}
+@media screen and (min-width:1070px) {
+    /* .info2{
+        padding-left:20%;
+    }
+     */
 }
 
 @media screen and (max-width:990px) {
     #form-wrap {
         width: 50%;
     }
-
+    .nav-container{
+        height:79px;
+    }
     .step2 {
         grid-template-columns: repeat(3, 31%);
         /*change box size here add % that's all*/
@@ -374,14 +386,19 @@ input::placeholder {
         gap: 1.2rem;
     }
 
-
+   .transcation{
+    font-size:15px;
+   }
 }
 
 @media screen and (max-width:786px) {
     #form-wrap {
         width: 70%;
     }
-
+   
+    .nav-container{
+        height:79px;
+    }
     .wrapper {
         gap: 1rem;
         padding: 10px !important;
@@ -396,6 +413,9 @@ input::placeholder {
     .section3>fieldset {
         width: 80%;
     }
+    .section4{
+        width:100%;
+    }
 
     .step2 {
         grid-template-columns: 40% 40%;
@@ -408,12 +428,8 @@ input::placeholder {
     .info1>h1 {
         font-size: 1.5rem;
     }
-
-    .section4 {
-        width: 100%;
-    }
-    #transcation{
-        font-size: 1rem;
+    .nav-container{
+        height:79px;
     }
 }
 
@@ -425,6 +441,9 @@ input::placeholder {
 
     .step2 {
         grid-template-columns: 70%;
+    }
+    .bringing{
+        font-size:14px !important;
     }
 
     .section3>fieldset {
@@ -458,13 +477,13 @@ input::placeholder {
         width: 100%;
     }
 
-    .info1>h1 {
+    /* .info1>h1 {
         font-size: 1.2rem;
     }
 
     .info1>p {
         font-size: 0.7rem;
-    }
+    } */
 
 }
 
@@ -507,4 +526,9 @@ input::placeholder {
 }
 .socialmedia:hover{
   color:blue;
+}
+.bringing{
+    font-size:20px !important;
+    font-weight:600;
+    font-style:oblique;
 }

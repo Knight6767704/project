@@ -11,17 +11,17 @@ let flagCode=false;
 const arr = [
     {
         name: "General Service",
-        price: "899/-",
+        price: "1099/-",
         list: ['VoltageCheck ', ' V beltCheck', 'Motor ', 'PCB Check', 'MCB Check', 'Lubrication', 'wiring ']
     },
     {
         name: "Repair",
-        price: "799/-",
+        price: "1099/-",
         list: [' VoltageCheck', ' V beltcheck', 'Motor ', 'PCB Check', 'MCB check', 'Lubrication', 'wiring ']
     },
     {
         name: "Installation",
-        price: "1099/-",
+        price: "799/-",
         list: ['VoltageCheck ', ' V beltcheck', 'Motor ', 'PCB check', 'MCB Check', 'Lubrication', 'wiring ']
     }
 ]
@@ -261,8 +261,8 @@ function Step4() {
 
 
     let info2 = document.querySelectorAll(".info2>h1")
-    info2[0].children[0].textContent = formObject['total'] + "/-";
-    info2[1].children[0].textContent = formObject['date'] + "/-";
+    info2[1].children[0].textContent = formObject['total'] + "/-";
+    // info2[1].children[0].textContent = formObject['date'] + "/-";
 
 }
 
